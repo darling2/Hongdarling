@@ -1,9 +1,3 @@
-<div>
-	소스도 올라가나?
-	테스ㅌ
-	<ul>
-		<li>
-			dkssud?헬로
-		</li>
-	</ul>
-</div>
+ 
+1.
+http://darling2.cafe24.com/study/jquery/bx_slide/index_t.php
