@@ -105,7 +105,22 @@ function prin2(result){
 cal('+',10,20,prin1);  //callback 함수
 cal('*',60,20,prin2);  //callback 함수
 
-7. 클로저를 이해하고 있나요?
+7. 클로저를 이해하고 있나요? 
+function create(){
+	var count=0;
+	function addCount(){
+		count++;
+		return count;
+	}
+	return addCount;
+}
+
+var counter = create();
+
+document.write(counter()); //1
+document.write(counter()); //2
+document.write(counter()); //3
+
 
 8. 함수를 이용해 간단한 탭메뉴를 만들 수 있나요?
 
