@@ -70,7 +70,40 @@ function sthello(){
 
 sthello();
 
-6. 콜백 함수를 이해하고 있나요?
+6. 콜백 함수를 이해하고 있나요? ㅇㅇ
+- 함수 내부의 처리 결과값을 함수 외부로 내보낼 때 사용,
+
+
+function cal(op,num1,num2,call){
+	var result = '';
+	switch(op){
+		case "+" :
+			result = num1 + num2 ;
+			break;
+		case "-" :
+			result = num1 - num2;
+			break;
+		case "*" :
+			result = num1*num2;
+			break;
+		case "/":
+			result =num1/num2;
+			break;
+		default :
+			result ='지원하지 않는 연산자';
+	}
+	call(result);
+}
+
+function prin1(result){
+	document.write('두 수의 합은' +result );
+}
+function prin2(result){
+	document.write('게싼' +result );
+}
+
+cal('+',10,20,prin1);  //callback 함수
+cal('*',60,20,prin2);  //callback 함수
 
 7. 클로저를 이해하고 있나요?
 
