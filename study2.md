@@ -57,7 +57,18 @@ function fun1(){
 
    ​
 
-5. 중첩 함수를 이해하고 있나요?
+5. 중첩 함수를 이해하고 있나요? ㅇㅇ
+ - 함수 내부에 만들어 지는 함수(하나 이상 생성 가능)
+function sthello(){
+	var count = 0;
+
+	setInterval (function(){
+		count++;
+		document.write(count + '안녕하세요', '<br>');
+	},1000)
+}
+
+sthello();
 
 6. 콜백 함수를 이해하고 있나요?
 
